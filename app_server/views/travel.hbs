@@ -23,7 +23,8 @@
 								<li>
 									<a href="/travel"><img src="images/{{this.image}}" alt="Img"></a>
 									<h2><a href="/travel">{{this.name}}</a></h2>
-									{{{this.description}}}
+									{{{this.description}}} 
+									<!-- this.description has triple handlebars around it instead of double handlebars so that the html tags will not be visible and the text will display as intended -->
 								</li>
 								{{/each}}
 							</ul>
@@ -33,7 +34,7 @@
 			</div>
 		</div>
 
-		<!-- <div id="header"> has been replaced with {{> header}} to stop repeating code unnecessarily-->
+		<!-- <div id="footer"> has been replaced with {{> footer}} to stop repeating code unnecessarily-->
 		{{> footer }}
 
 	</div>
